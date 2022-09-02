@@ -1,5 +1,6 @@
 #condicionales
 #soy el otro cambio
+# soy el otro cambio dospuntocero
 
 role = :user 
 if role==:admin
