@@ -19,12 +19,11 @@ end
   }
   tests_sum.each do |input,expect_result|
 
-    byebug
-      if !calc.sum(input[0],input[1])==expect_result
+    # byebug
+      if !(calc.sum(input[0],input[1])==expect_result)
         raise "Test failed for input #{input}. Expected result #{expect_result}"
-
       end
     end
-    
+
     
   
