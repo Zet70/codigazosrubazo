@@ -15,7 +15,7 @@ class Calculator
   # end
 
   def sum(a,b)
-    a * b
+    a + b
   end
 
 
@@ -48,7 +48,7 @@ class TestCalculator < Minitest::Test
   end
   
   def test_sum_negatives
-    result = @calc.sum(1,-3)
+    result = @calc.substract(-1,-3)
     assert_equal result, -4
   end
   def test_sum_negatives
