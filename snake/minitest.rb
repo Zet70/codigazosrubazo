@@ -35,27 +35,29 @@ class Calculator
   # end
   
 end
+
 class TestCalculator < Minitest::Test
   
   def setup
     @calc = Calculator.new
   end
   
-  def tests_sum_positives
+  def test_sum_positives
     result = @calc.sum(1,3)
     assert_equal result, 4
   end
   
-  def tests_sum_negatives
+  def test_sum_negatives
     result = @calc.sum(1,-3)
     assert_equal result, -4
   end
-  def tests_sum_negatives
+  def test_sum_negatives
     result = @calc.sum(1,-3)
     assert_equal result, -2
   end 
 end
 
+# TestCalculator.new
 # xd = Calculator.new(2)
 
 #   xd.saludar
